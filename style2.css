@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Cute Font', sans-serif;
+}
+
+.cari {
+    position: relative;
+    width: 300px;
+    padding-top: 18px;
+}
+
+.carilagu {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Cute Font', sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-size: 30px;
+    color :rgb(0, 247, 255);
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: black;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+    overflow: auto;
+}
+
+.songlistwrap{
+    margin-top: 20px;
+    background-color: rgb(46, 46, 46);
+}
+
+.songlistwrap.active{
+    margin-top: 20px;
+    background-color: rgb(172, 172, 172);
+}
+
+.songlist{
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.songlistimg{
+    width: 2cm;
+    flex: 0.01;
+    padding-bottom: 10px;
+}
+
+.songlistitem{
+    padding-left: 40px;
+    flex: 2;
+    padding-bottom: 10px;
+}
+
+.songlistdesc{
+    flex: 3;
+    padding-bottom: 10px;
+}
+
+.songlistimg.active{
+    width: 2cm;
+    flex: 0.01;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.songlistitem.active{
+    padding-left: 40px;
+    flex: 2;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.songlistdesc.active{
+    flex: 2;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.watch{
+    font-family: 'Averia Libre', system-ui;
+    font-size: smaller;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    cursor: pointer;
+    padding-bottom: 18px;
+    margin-right: 20px;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: gray;
+    opacity: .5;
+}
+
+.container.active{
+    background-color: white;
+    color: #151515;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.logo.active{
+    color: blue;
+}
+
+.feature-content.active{
+    background-color: white;
+}
+
+@media only screen and (max-width: 940px) {
+    .menu-container{
+        display: none;
+    }
+}
